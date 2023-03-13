@@ -1,0 +1,139 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+body{
+    background: rgba(67, 212, 123, 0.575);
+}
+nav{
+    background-color: cadetblue;
+    height: 3rem;
+}
+nav ul{
+    display: flex;
+    justify-content: space-evenly;
+   
+    
+}
+nav ul li{
+    margin-top: 0.7rem;
+    font-size: 22px;
+    
+    
+}
+nav ul li:hover{
+    background: rgba(64, 86, 87, 0.529);
+
+}
+nav ul li a{
+    color: white;
+}
+
+
+.container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: fit-content;
+   
+    /* background-color: green; */
+  
+}
+
+.myinamge img{
+    border-radius: 50%;
+    border: 1px solid whitesmoke;
+}
+
+.description{
+    background: darkgray;
+    height: 300px;
+    width: 650px;
+    padding: 13px;
+    border-radius: 5px;
+    border: 1px solid whitesmoke;
+}
+.span{
+    color: blueviolet;
+}
+.header{
+    text-align: center;
+    font-weight: bolder;
+    font-size: 28px;
+    color: darkgreen;
+}
+.mydesc{
+    font-size: 22px;
+    font-weight: 500;
+}
+.moretext{
+    font-size: 22px;
+    font-weight: 500;
+    margin-top: 14px;
+}
+
+@media screen and (max-width: 1090px) {
+    .container{
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        align-items: center;
+        height: fit-content;
+    }
+    .myinamge img{
+        height: 300px;
+        width: 300px;
+    }
+    .description{
+        height: fit-content;
+        min-height: 200px;
+        width: 100%;
+    }
+    .mydesc{
+        font-size: 18px;
+        font-weight: 500;
+        padding: 10px;
+    }
+    .moretext{
+        font-size: 18px;
+        font-weight: 500;
+        margin-top: 14px;
+        padding: 10px;
+    }  
+
+    
+}
+
+@media screen and (max-width: 600px) {
+    nav {
+        height: fit-content;
+        
+      }
+      nav ul {
+        flex-direction: column;
+        padding-right: 2rem;
+        align-items: center;
+      }
+      nav ul li {
+        margin: 8px 0;
+      }
+    
+    .myinamge img{
+        height: 250px;
+        width: 250px;
+    }
+    .header{
+        font-size: 20px;
+        font-weight: 600;
+    }
+    .mydesc{
+        font-size: 16px;
+    }
+    .moretext{
+        font-size: 16px;
+        margin-top: 10px;
+    }
+}
